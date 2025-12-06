@@ -8,16 +8,16 @@
 6.Final Note
 
 🧩 Tech Stack & Libraries Used
-Core
+Core:
 ⚛️ React 18
 ▶️ Next.js 14 (App Router)
 🔷 TypeScript
 
-Styling
+Styling:
 🎨 Tailwind CSS — Pixel-perfect Figma replication
 🎛 CSS Modules — Component-scoped style overrides
 
-State Management
+State Management:
 🟣 Redux Toolkit (Slices + Async Thunks)
 
 Custom hooks:
@@ -26,7 +26,7 @@ useChargerDetails()
 useNotifications()
 useNotificationSimulator() (for realtime updates)
 
-Next.js Utilities
+Next.js Utilities:
 🖼 next/image
 🖼 next/Link
 
@@ -90,15 +90,15 @@ project/
     http://localhost:3000
 
 🧠 Assumptions Made
-1. No actual backend available
+1. No actual backend available:-
 Mock APIs & dummy IDs were required.
 → Hooks + thunks are fully functional and ready for real API integration.
 
-2. Realtime Notifications
+2. Realtime Notifications:-
 Since backend push (WS/SSE) wasn’t available, a client-side realtime simulator was implemented.
     useNotificationSimulator(true, 7000);
    
-3. Pixel-perfect UI
+3. Pixel-perfect UI:-
 Every major UI section closely follows Figma:
     Left Sidebar
     Top Header (sticky)
@@ -107,15 +107,15 @@ Every major UI section closely follows Figma:
     6 Detail Cards
     Live Notifications Panel
 
-4. Icons
+4. Icons:-
 Figma icons are expected
 
 🎨 Design Challenges & Solutions
 1. Achieving Complex Grid Ratios
 2. Sticky Header Overlapping Content
-3. Realtime Notification Simulation
+3. Realtime Notification Simulation:-
   Simulated live updates using a custom hook that dispatches Redux actions every N seconds.
-4. Consistent Design System
+4. Consistent Design System:-
   Tailwind variables + Figma-based color palette ensured proper mapping.
 
 🙏 Final Note
