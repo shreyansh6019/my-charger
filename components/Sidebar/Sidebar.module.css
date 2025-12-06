@@ -1,0 +1,28 @@
+.sidebarScroll {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(148,163,184,0.25) transparent;
+}
+.sidebarScroll::-webkit-scrollbar {
+  width: 8px;
+}
+.sidebarScroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+.sidebarScroll::-webkit-scrollbar-thumb {
+  background-color: rgba(148,163,184,0.12);
+  border-radius: 9999px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+.badgeShift {
+  transform: translate(6px, -6px);
+}
+.activeBar {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 36px;
+  width: 4px;
+  border-radius: 0 4px 4px 0;
+  background: linear-gradient(180deg, #06b6d4, #7c3aed);
+}
