@@ -26,6 +26,15 @@ useChargerDetails()
 useNotifications()
 useNotificationSimulator() (for realtime updates)
 
+Custom context:
+MobileNotifyContext() :- To hamdle notification screen on mobile & tablet screens
+
+Miscellaneous Files 
+not-found.tsx :- UI when route does not match, 
+error.tsx :- An Errorboundary to handle errors
+loading.tsx :- React Suspense/callback feature as Loading UI will be displayed which HTML page are generated or server is fetching the data
+layout.tsx :- To make Sidebar & Header static even when other UI components take time to load
+
 Next.js Utilities:
 🖼 next/image
 🖼 next/Link
@@ -66,6 +75,9 @@ project/
 │   ├── useChargerDetails.ts
 │   ├── useNotifications.ts
 │   └── useNotificationSimulator.ts
+│
+├── context/
+│   ├── MobileNotifyContext.tsx
 │
 ├── store/
 │   ├── store.ts

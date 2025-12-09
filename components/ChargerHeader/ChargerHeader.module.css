@@ -1,6 +1,6 @@
 .headerGlass {
   background: rgba(21, 23, 39, 0.5);
-  height: 4rem;
+  height: auto;
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
 }

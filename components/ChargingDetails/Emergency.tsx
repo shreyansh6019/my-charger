@@ -9,8 +9,8 @@ type Props = {
 
 export default function Emergency({ title = "Emergency stop", engaged = false }: Props) {
   return (
-    <section className="w-full rounded-lg bg-[#0d111d] p-7 shadow-sm">
-      <div className="flex flex-col gap-[7.5rem]">
+    <section className="w-full rounded-lg bg-[#0d111d] lg:p-7 md:p-4 p-6 shadow-sm">
+      <div className="flex flex-col lg:gap-[7.5rem] md:gap-[7.125rem] gap-[6.125rem]">
         <div className="flex flex-col items-start justify-start">
           <h4 className="text-sm font-semibold text-slate-100">{title}</h4>
           <span className="text-xs text-slate-400">Emergency Stop Status</span>

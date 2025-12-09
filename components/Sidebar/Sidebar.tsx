@@ -85,8 +85,16 @@ export default function Sidebar() {
             aria-label={item.label}
             title={item.label}
           >
-            <span className="block text-sm">{item.iconPlaceholder}</span>
-            <span className="hidden text-[10px] sm:block">{item.label}</span>
+            {item?.source && (
+                <Image
+                    src={item?.source}
+                    alt={item?.label}
+                    width={item?.id === "dash" ? 16 : 18}
+                    height={item?.id === "dash" ? 16 : 18}
+                    className="opacity-80 group-hover:opacity-100 transition-all"
+                    priority={false}
+                />
+            )}
           </Link>
         ))}
 
@@ -96,8 +104,14 @@ export default function Sidebar() {
           aria-label="Profile"
           title="Profile"
         >
-          <span className="block text-sm">U</span>
-          <span className="hidden text-[10px] sm:block">You</span>
+          <Image
+              src={UserLogo}
+              alt="User Logo"
+              width={28}
+              height={28}
+              className="opacity-80 group-hover:opacity-100 transition-all"
+              priority={false}
+          />
         </Link>
       </nav>
     </>
