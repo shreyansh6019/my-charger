@@ -6,6 +6,8 @@ import Header from "../components/Header/Header";
 
 import styles from "./layout.module.css";
 import ReduxProvider from "@/components/ReduxProvider/ReduxProvider";
+import React from "react";
+import MobileNotifyProvider from "@/components/Notifications/MobileNotifyProvider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,16 +29,20 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased text-slate-100`}>
         <Sidebar />
-        <div className={`min-h-[81vh] w-full md:pl-20 ${styles.main_content}`}>
-          <Header />
-          <ReduxProvider>
-            <main className="px-9 py-6">{children}</main>
-          </ReduxProvider>
-        </div>
+        
+        <MobileNotifyProvider>
+          <div className={`min-h-[81vh] w-full md:pl-20 ${styles.main_content}`}>
+            <Header />
+            <ReduxProvider>
+              <main className="md:mb-0 mb-10 lg:px-9 md:px-6 px-4 py-6">{children}</main>
+            </ReduxProvider>
+          </div>
+        </MobileNotifyProvider>
       </body>
     </html>
   );

@@ -39,7 +39,7 @@ export default function ChargerTabs({
   return (
     <nav
       aria-label="Charger navigation tabs"
-      className="w-full backdrop-blur-sm mt-2"
+      className="md:block hidden w-full backdrop-blur-sm mt-2"
     >
       <div className="mx-auto mb-3 border-solid border-b-[2px] border-slate-400 flex max-w-7xl items-center justify-between px-4">
         <div className="flex w-full items-center justify-between gap-4 pt-3">

@@ -26,8 +26,32 @@ export default function ChargerDetails({ chargerId, className }: Props) {
   
   return (
     <div className={`w-full ${className}`}>
-      <div className="mx-auto max-w-7xl">
+      <div className="mx-auto max-w-7xl grid gap-3">
+        <div className={`grid grid-cols-1 gap-3 md:grid-cols-5 ${styles.panelScroll}`}>
+          <div className="col-span-1 md:col-span-2">
+            <Diaganosis />
+          </div>
+          <div className="col-span-1 md:col-span-3">
+            <ChargerStatus />
+          </div>
+        </div>
         <div className={`grid grid-cols-1 gap-3 md:grid-cols-4 ${styles.panelScroll}`}>
+          <div className="col-span-1 md:col-span-2">
+            <ChargerMCB />
+          </div>
+          <div className="col-span-1 md:col-span-2">
+            <Emergency />
+          </div>
+        </div>
+        <div className={`grid grid-cols-1 gap-3 md:grid-cols-5 ${styles.panelScroll}`}>
+          <div className="col-span-1 md:col-span-3">
+            <Temperature />
+          </div>
+          <div className="col-span-1 md:col-span-2">
+            <ChargerGunStatus />
+          </div>
+        </div>
+        {/* <div className={`grid grid-cols-1 gap-3 md:grid-cols-4 ${styles.panelScroll}`}>
           <div className="col-span-1 md:col-span-1">
             <Diaganosis />
           </div>
@@ -46,7 +70,7 @@ export default function ChargerDetails({ chargerId, className }: Props) {
           <div className="col-span-1 md:col-span-1">
             <ChargerGunStatus />
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

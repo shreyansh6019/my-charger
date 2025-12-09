@@ -10,8 +10,8 @@ type Props = {
 
 export default function ChargerGunStatus({ title = "Gun Status" }: Props){
   return (
-    <section className="w-full rounded-lg bg-[#151727] p-4 shadow-sm">
-      <div className="flex flex-col gap-[3.25rem]">
+    <section className="w-full rounded-lg bg-[#151727] lg:p-8 p-4 shadow-sm">
+      <div className="flex flex-col md:gap-[3.25rem] gap-[2.25rem]">
         <div className="flex flex-col items-start justify-start">
           <h4 className="text-sm font-semibold text-slate-100">{title}</h4>
           <span className="text-xs text-slate-400">Gun Armed/Charging Status</span>

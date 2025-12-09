@@ -24,11 +24,11 @@
 }
 .diaganosis_title {
     line-height: 1;
-    font-size: 0.75rem;
+    font-size: 0.875rem;
 }
 .diaganosis_subtitle {
     line-height: 1;
-    font-size: 0.6875rem;
+    font-size: 0.75rem;
 }
 .green_circle {
   height: 8px;
@@ -56,5 +56,9 @@
 }
 .divider {
     background: radial-gradient(4531180% 105.2% at 305.13% 105.36%, #060a1000 4.76%, #adb7d2 43.43%, #060a1000 96.3%);
-    margin: 0 8px;
+    height: -webkit-fill-available;
+
+    &::marker {
+        display: none;
+    }
 }

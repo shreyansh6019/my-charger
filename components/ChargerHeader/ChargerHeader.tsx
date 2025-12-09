@@ -25,11 +25,11 @@ export default function ChargerHeader({
 }: ChargerHeaderProps) {
   return (
     <div className={`w-full ${styles.headerGlass}`}>
-      <div className="flex justify-between gap-4 px-4 py-3">
-        <div className="flex min-w-0 items-center gap-4 px-5">
+      <div className="flex justify-between gap-4 lg:px-4 lg:py-3 md:px-3 md:py-2 px-2 py-2 items-center">
+        <div className="flex min-w-0 items-center lg:gap-4 md:gap-3 gap-2 lg:px-5 md:px-3 px-1">
             <Link
                 href="#"
-                className="inline-flex items-center justify-center rounded-md bg-transparent py-2 text-slate-200 hover:bg-slate-800"
+                className="inline-flex items-center justify-center rounded-md bg-transparent lg:py-2 py-0 text-slate-200 hover:bg-slate-800"
                 aria-label="Back"
                 title="Back"
             >
@@ -51,16 +51,16 @@ export default function ChargerHeader({
                 priority={false}
             />
             <div className="min-w-0">
-                <div className={`flex items-center gap-3 text-sm font-semibold text-slate-100 ${styles.truncateTitle}`}>
+                <div className={`flex items-center gap-3 lg:text-sm text:xs font-semibold text-slate-100 ${styles.truncateTitle}`}>
                     <span className="text-base font-semibold leading-tight">{title}</span>
                 </div>
-                <div className={`mt-0.5 text-xs text-slate-400 ${styles.subTitle}`}>{subtitle}</div>
+                <div className={`mt-0.5 lg:text-xs text-[0.675rem] text-slate-400 ${styles.subTitle}`}>{subtitle}</div>
             </div>
         </div>
         <div className="flex items-center gap-3">
           <button
             onClick={onAdd}
-            className="flex items-center gap-2 rounded-md bg-slate-800 px-3 py-2 text-sm font-medium text-slate-200 hover:bg-slate-700"
+            className="flex items-center gap-2 rounded-md bg-slate-800 lg:px-3 px-2 lg:py-2 md:py-1 py-[6px] text-sm font-medium text-slate-200 hover:bg-slate-700"
             aria-label="Add Charger"
             title="Add Charger"
             type="button"
@@ -70,14 +70,14 @@ export default function ChargerHeader({
                 alt="logo"
                 width={24}
                 height={24}
-                className="opacity-80 group-hover:opacity-100 transition-all"
+                className="opacity-80 group-hover:opacity-100 transition-all lg:h-6 lg:w-6 md:h-4 h-4 md:w-4 w-4"
                 priority={false}
             />
             <span className="hidden sm:inline">Add Charger</span>
           </button>
           <button
             onClick={onDownload}
-            className="inline-flex h-10 w-10 items-center justify-center rounded-md bg-slate-800 text-slate-200 hover:bg-slate-700"
+            className="inline-flex lg:h-10 lg:w-10 h-7 w-7 items-center justify-center rounded-md bg-slate-800 text-slate-200 hover:bg-slate-700"
             aria-label="Download"
             title="Download"
             type="button"

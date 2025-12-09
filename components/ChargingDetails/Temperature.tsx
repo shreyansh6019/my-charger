@@ -14,15 +14,15 @@ type Props = {
 
 export default function Temperature({ title = "Temperature" }: Props) {
   return (
-    <section className="w-full rounded-lg bg-[#151727] pt-[2rem] pl-[2rem] pr-[2rem] pb-[4rem] shadow-sm">
+    <section className="w-full rounded-lg bg-[#151727] lg:pt-[2rem] pt-[1rem] lg:pl-[2rem] pl-[1rem] lg:pr-[2rem] pr-[1rem] md:pb-[4rem] pb-[1rem] shadow-sm">
       <div className="flex flex-col gap-[3rem]">
         <div className="flex flex-col items-start justify-start">
           <h4 className="text-sm font-semibold text-slate-100">{title}</h4>
           <span className="text-xs text-slate-400">Temperature and Humidity in and around Charger</span>
         </div>
 
-              <div className="mt-3 grid grid-cols-5 gap-4 text-xs text-slate-400">
-                  <div className="grid gap-[1rem]">
+              <div className="mt-3 inline-flex gap-3 text-xs text-slate-400">
+                  <div className="grid gap-[2rem]">
                       <div className="flex">
                           <Image src={Thermostat} alt="temperature icon" width={20} height={20} className="inline-block mr-1 mb-1 w-6 h-6" />
                           <div className="flex flex-col">
@@ -42,8 +42,8 @@ export default function Temperature({ title = "Temperature" }: Props) {
                       </div>
 
                   </div>
-                  <div className={`${styles.divider} w-[1px] h-full`}></div>
-                  <div className="grid gap-[1rem]">
+                  <div className={`${styles.divider} lg:mx-[0.5rem] md:mx-[0.125rem] mx-[0.5rem] list-item w-[1px] h-full`}></div>
+                  <div className="grid gap-[2rem]">
                       <div className="flex">
                           <Image src={TemperatureIcon} alt="temperature icon" width={20} height={20} className="inline-block mr-1 mb-1 w-6 h-6" />
                           <div className="flex flex-col">
@@ -62,8 +62,8 @@ export default function Temperature({ title = "Temperature" }: Props) {
                       </div>
 
                   </div>
-                  <div className={`${styles.divider} w-[1px] h-full`}></div>
-                  <div className="grid gap-[1rem]">
+                  <div className={`${styles.divider} lg:mx-[0.5rem] md:mx-[0.125rem] mx-[0.5rem] list-item w-[1px] h-full`}></div>
+                  <div className="grid gap-[2rem]">
                       <div className="flex">
                           <Image src={ChargerGun} alt="charger gun icon" width={20} height={20} className="inline-block mr-1 mb-1 w-6 h-6" />
                           <div className="flex flex-col">
