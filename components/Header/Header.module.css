@@ -1,0 +1,11 @@
+.iconBadge {
+  min-width: 18px;
+  height: 18px;
+  font-size: 10px;
+  line-height: 18px;
+}
+.focusRing:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.12);
+  border-radius: 6px;
+}

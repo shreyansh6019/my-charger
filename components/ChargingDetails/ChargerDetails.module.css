@@ -1,0 +1,60 @@
+.panelScroll {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(148,163,184,0.12) transparent;
+}
+
+.panelScroll::-webkit-scrollbar {
+  width: 8px;
+}
+.panelScroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+.panelScroll::-webkit-scrollbar-thumb {
+  background-color: rgba(148,163,184,0.08);
+  border-radius: 8px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+.cardHover:hover {
+  transform: translateY(-2px);
+  transition: transform 160ms ease;
+}
+.badgeShift {
+  transform: translate(6px, -6px);
+}
+.diaganosis_title {
+    line-height: 1;
+    font-size: 0.75rem;
+}
+.diaganosis_subtitle {
+    line-height: 1;
+    font-size: 0.6875rem;
+}
+.green_circle {
+  height: 8px;
+    width: 8px;
+    display: flex;
+    background: #87c445;
+    border-radius: 50%;
+    margin-left: 6px;
+}
+.black_circle {
+    height: 14px;
+    width: 14px;
+    display: flex;
+    background: #171717;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+}
+.white_circle {
+    height: 10px;
+    width: 10px;
+    display: flex;
+    background: #ffffff;
+    border-radius: 50%;
+}
+.divider {
+    background: radial-gradient(4531180% 105.2% at 305.13% 105.36%, #060a1000 4.76%, #adb7d2 43.43%, #060a1000 96.3%);
+    margin: 0 8px;
+}
